@@ -1,0 +1,271 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background: rgb(27,96,27);
+    background: linear-gradient(to right top, rgba(27,96,27,1) 0%, rgba(3,3,48,1) 65%);
+
+}
+.wrapper{
+    display: flex;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    
+}
+.left{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right:2vw ;
+}
+.left h1{
+    text-transform: uppercase;
+    font-size: 1.6vw ;
+    color: #fff;
+    border-right: solid 2px gray;
+    padding-right: 2vw;
+    
+}
+.left i{
+    padding-right: 2.vw;
+    font-weight: 900;
+    font-size: 1.7vw;
+    color: #38b000;
+}
+.mid{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right:2vw ;
+}
+.mid a{
+text-decoration: none;
+color: #fff;
+margin: 0 2vw;
+text-transform: capitalize;
+font-weight: 600;
+}
+.right{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right:2vw ;
+    justify-content: flex-end;
+}
+.right button{
+    padding: .7vw 1vw;
+    border: white solid;
+    border-radius:5px ;
+    font-weight: 800;
+    font-size: 1.1w;
+    color: #fff;
+}
+.signin{
+  margin: 0 1vw;
+  background: transparent;
+
+}
+.menu{
+    display: none;
+}
+.contactsales{
+    background-color: rgb(171, 151, 190);
+    
+}
+.upper-body{
+    
+
+    padding-left: 15vw;
+}
+
+.mainbody h2{
+    color: #38b000;
+    font-size: 2vw;
+    padding: 1.5vw 0;
+}
+.mainbody h1{
+    color: #fff;
+    font-size: 4vw;
+    font-weight: 600;
+}
+.mainbody .sentence{
+    color: #fff;
+    font-size: 1.9vw;
+    font-weight: 500;
+    padding: 1.5vw 0;
+}
+.paragraph p {
+    font-size: 1.5vw;
+    line-height: 3vw;
+    color: #fff;
+}
+.paragraph p i{
+   margin-right: 1.5vw;
+   color: #38b000;
+}
+.install{
+    padding: 0.8vw 3vw;
+    margin-left: 2vw;
+    margin-top: 2vw;
+    font-size: 1.2vw;
+    border-radius: 5px;
+    border: none;
+    background-color: #38b000;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+
+}
+.install i{
+    padding-right: 1vw;
+    font-size: 1.4vw;
+}
+.arrow{
+    background-color: #2e7d09;
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    bottom: 0.001vw;
+    left: 11vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow i{
+padding: 2vw;
+font-size: 1.5vw;
+
+}
+.lower-body{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    margin-left: 3vw;
+    
+}
+.lower-body a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1vw;
+    margin-top: 2vw;
+    position: relative;
+}
+.download{
+    padding-left: 2vw;
+    color: #fff;
+    padding-top: 0.5vw;
+}
+.download i{
+  font-size: 1.5vw;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 1px) and (max-width: 425px) {
+    .mid{
+        display: none;
+    }
+    .right{
+        display: none;
+    }
+    .left h1{
+    
+        font-size: 2vh;
+        border-right: gray solid ;
+        padding: 2vw;
+    }
+    .left i{
+        font-size: 3vh;
+    }
+    .left{
+        padding-left:9vh ;
+    }
+    .menu{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .menu i{
+        color: #fff;
+        font-size: 2.5vh;
+       margin: 0 2.5vh;
+    }
+    .down{
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+         background-color: #000; 
+        height: fit-content;
+    }
+    .down a{
+        padding: 2vh;
+    }
+    .upper{
+        padding-right: 5vh;
+    }
+    .upper h2{
+        font-size: 2vh;
+    }
+    .upper h1{
+        font-size: 4vh;
+        padding-bottom: 1.5vh;
+    }
+    .upper .sentence{
+        font-size: 1.5vh;
+        padding-bottom: 2vh;
+    }
+    .paragraph p{
+        font-size: 1.3vh;
+        line-height: 2vh;
+    }
+    .install{
+        margin-left: 10vh;
+        margin-top: 7vh;
+        padding: 1vh 2vh;
+        font-size: 1vh;
+    }
+    .install .down{
+        font-size: 2vh;
+    }
+    .arrow{
+        margin-left: 2.7vh;
+    }
+    .lower-body{
+        margin-left: 12vh;
+        margin-top: 1vh;
+    }
+    .lower-body a{
+        font-size: 0.6vh;
+    }
+    .download{
+        font-size: 1vh;
+    }
+
+
+
+}
